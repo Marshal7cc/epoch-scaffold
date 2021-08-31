@@ -1,0 +1,26 @@
+# server
+server:
+  port: 9998
+# spring
+spring:
+  application:
+    name: epoch-demo-starter-mybatis
+  # data source
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${mysql.url:localhost:3306}/epoch-iam?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: marshal1234!
+# log
+logging:
+  level:
+    root: debug
+# health check management
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway

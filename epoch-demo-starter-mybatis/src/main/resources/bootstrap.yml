@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: epoch-demo-starter-mybatis
+  profiles:
+    active: local

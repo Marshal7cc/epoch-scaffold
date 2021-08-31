@@ -24,5 +24,18 @@
 
     <modules>
         <module>epoch-demo-starter-core</module>
+        <module>epoch-demo-starter-mybatis</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.epoch</groupId>
+                <artifactId>epoch-dependencies</artifactId>
+                <version>1.0.0.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
