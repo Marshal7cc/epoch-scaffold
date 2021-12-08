@@ -1,0 +1,24 @@
+# server
+server:
+  port: 9999
+# spring
+spring:
+  application:
+    name: epoch-demo-starter-lock
+
+# epoch lock
+epoch:
+  lock:
+    single-server:
+      address: localhost
+      port: 6379
+
+# health check management
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
