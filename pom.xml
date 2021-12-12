@@ -26,6 +26,7 @@
         <module>epoch-demo-starter-core</module>
         <module>epoch-demo-starter-lock</module>
         <module>epoch-demo-starter-mybatis</module>
+        <module>epoch-demo-starter-metric</module>
     </modules>
 
     <dependencyManagement>
