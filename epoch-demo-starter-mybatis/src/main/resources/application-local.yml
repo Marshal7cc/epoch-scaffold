@@ -1,6 +1,6 @@
 # server
 server:
-  port: 9998
+  port: 9999
 # spring
 spring:
   application:
@@ -14,7 +14,7 @@ spring:
 # log
 logging:
   level:
-    root: debug
+    root: info
 # health check management
 management:
   endpoint:
@@ -24,3 +24,4 @@ management:
     web:
       exposure:
         include: health,info,gateway
+

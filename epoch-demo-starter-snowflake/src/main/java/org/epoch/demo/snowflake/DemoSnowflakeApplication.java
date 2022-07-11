@@ -1,7 +1,7 @@
 package org.epoch.demo.snowflake;
 
-import org.epoch.starter.core.util.ApplicationContextHolder;
-import org.epoch.starter.snowflake.helper.SnowflakeHelper;
+import org.epoch.core.util.ApplicationContextHolder;
+import org.epoch.snowflake.helper.SnowflakeHelper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

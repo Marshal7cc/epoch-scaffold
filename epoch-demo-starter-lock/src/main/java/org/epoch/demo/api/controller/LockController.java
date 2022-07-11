@@ -4,8 +4,8 @@ import lombok.Data;
 import org.epoch.core.base.BaseController;
 import org.epoch.core.rest.Response;
 import org.epoch.core.rest.ResponseEntity;
-import org.epoch.starter.lock.annotation.Lock;
-import org.epoch.starter.lock.annotation.LockKey;
+import org.epoch.lock.annotation.Lock;
+import org.epoch.lock.annotation.LockKey;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -21,28 +21,28 @@ public class LockController extends BaseController {
 
     @GetMapping("/test1")
     @Lock(name = "'lockOps'")
-    public ResponseEntity<Object> test1() throws InterruptedException {
+    public ResponseEntity<Void> test1() throws InterruptedException {
         Thread.sleep(20000L);
         return Response.success();
     }
 
     @GetMapping("/test11")
     @Lock(name = "'lockOps'+#id")
-    public ResponseEntity<Object> test1(@RequestParam String id) throws InterruptedException {
+    public ResponseEntity<Void> test1(@RequestParam String id) throws InterruptedException {
         Thread.sleep(20000L);
         return Response.success();
     }
 
     @GetMapping("/test2")
     @Lock(waitTime = 10L)
-    public ResponseEntity<Object> test2(@LockKey @RequestParam String id) throws InterruptedException {
+    public ResponseEntity<Void> test2(@LockKey @RequestParam String id) throws InterruptedException {
         Thread.sleep(20000L);
         return Response.success();
     }
 
     @GetMapping("/test3")
     @Lock(name = "", waitTime = 10L)
-    public ResponseEntity<Object> test3(@LockKey("userName") User user) throws InterruptedException {
+    public ResponseEntity<Void> test3(@LockKey("userName") User user) throws InterruptedException {
         Thread.sleep(20000L);
         return Response.success();
     }
