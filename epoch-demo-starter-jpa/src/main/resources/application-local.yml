@@ -1,0 +1,27 @@
+# server
+server:
+  port: 9999
+# spring
+spring:
+  application:
+    name: epoch-demo-starter-jpa
+  # data source
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${mysql.url:localhost:3306}/epoch-iam?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: marshal1234!
+# log
+logging:
+  level:
+    root: info
+# health check management
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+

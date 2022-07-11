@@ -25,6 +25,7 @@
     <modules>
         <module>epoch-demo-starter-core</module>
         <module>epoch-demo-starter-lock</module>
+        <module>epoch-demo-starter-jpa</module>
         <module>epoch-demo-starter-mybatis</module>
         <module>epoch-demo-starter-metric</module>
         <module>epoch-demo-starter-snowflake</module>

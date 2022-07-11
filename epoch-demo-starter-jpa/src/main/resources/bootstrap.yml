@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: epoch-demo-starter-jpa
+  profiles:
+    active: local
+
+  # nacos local mode
+  cloud:
+    nacos:
+      config:
+        enabled: false
+      discovery:
+        enabled: false
+epoch:
+  security:
+    enable-auth: false
