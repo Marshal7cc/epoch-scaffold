@@ -3,3 +3,14 @@ spring:
     name: epoch-demo-starter-mybatis
   profiles:
     active: local
+
+  # nacos local mode
+  cloud:
+    nacos:
+      config:
+        enabled: false
+      discovery:
+        enabled: false
+epoch:
+  security:
+    enable-auth: false

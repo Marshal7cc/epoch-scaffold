@@ -1,13 +1,15 @@
 package org.epoch.demo.mybatis;
 
+import org.epoch.web.annotation.EpochApplication;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author Marshal
  * @since 2021/8/26
  */
-@SpringBootApplication
+@EpochApplication
+@MapperScan("org.epoch.**.mapper")
 public class DemoMybatisApplication {
     public static void main(String[] args) {
         SpringApplication.run(DemoMybatisApplication.class, args);

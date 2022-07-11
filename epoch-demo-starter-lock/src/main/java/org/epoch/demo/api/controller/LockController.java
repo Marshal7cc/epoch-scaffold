@@ -1,7 +1,6 @@
 package org.epoch.demo.api.controller;
 
 import lombok.Data;
-import org.epoch.core.base.BaseController;
 import org.epoch.core.rest.Response;
 import org.epoch.core.rest.ResponseEntity;
 import org.epoch.lock.annotation.Lock;
@@ -17,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/demo/lock")
-public class LockController extends BaseController {
+public class LockController {
 
     @GetMapping("/test1")
     @Lock(name = "'lockOps'")
