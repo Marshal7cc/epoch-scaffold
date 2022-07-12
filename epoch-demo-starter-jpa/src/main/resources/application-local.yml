@@ -11,10 +11,13 @@ spring:
     url: jdbc:mysql://${mysql.url:localhost:3306}/epoch-iam?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
     username: root
     password: marshal1234!
+  jpa:
+    show-sql: true
 # log
 logging:
   level:
     root: info
+    org.epoch: debug
 # health check management
 management:
   endpoint:

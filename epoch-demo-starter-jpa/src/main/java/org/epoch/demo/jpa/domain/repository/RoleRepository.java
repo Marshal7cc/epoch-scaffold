@@ -1,7 +1,7 @@
 package org.epoch.demo.jpa.domain.repository;
 
 import org.epoch.data.repository.BaseRepository;
-import org.epoch.demo.jpa.repository.entity.Role;
+import org.epoch.demo.jpa.infrastructure.repository.entity.Role;
 
 /**
  * @author Marshal

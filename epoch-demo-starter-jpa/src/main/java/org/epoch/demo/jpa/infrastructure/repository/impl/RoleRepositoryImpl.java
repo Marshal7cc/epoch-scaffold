@@ -1,9 +1,9 @@
-package org.epoch.demo.jpa.repository.impl;
+package org.epoch.demo.jpa.infrastructure.repository.impl;
 
 
 import org.epoch.demo.jpa.domain.repository.RoleRepository;
-import org.epoch.demo.jpa.repository.entity.Role;
-import org.epoch.demo.jpa.repository.RoleJpaRepository;
+import org.epoch.demo.jpa.infrastructure.repository.entity.Role;
+import org.epoch.demo.jpa.infrastructure.repository.RoleJpaRepository;
 import org.epoch.jpa.repository.BaseJpaRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

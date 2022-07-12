@@ -2,7 +2,7 @@ package org.epoch.demo.jpa.facade.controller;
 
 
 import org.epoch.demo.jpa.domain.repository.RoleRepository;
-import org.epoch.demo.jpa.repository.entity.Role;
+import org.epoch.demo.jpa.infrastructure.repository.entity.Role;
 import org.epoch.demo.jpa.facade.dto.RoleDTO;
 import org.epoch.demo.jpa.facade.query.RoleQuery;
 import org.epoch.demo.jpa.facade.vo.RoleVO;

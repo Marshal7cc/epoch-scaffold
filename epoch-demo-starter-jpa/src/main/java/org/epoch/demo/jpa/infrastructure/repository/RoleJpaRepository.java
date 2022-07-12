@@ -1,6 +1,6 @@
-package org.epoch.demo.jpa.repository;
+package org.epoch.demo.jpa.infrastructure.repository;
 
-import org.epoch.demo.jpa.repository.entity.Role;
+import org.epoch.demo.jpa.infrastructure.repository.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
