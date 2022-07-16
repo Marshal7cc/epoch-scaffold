@@ -11,6 +11,3 @@ spring:
         enabled: false
       discovery:
         enabled: false
-epoch:
-  security:
-    enable-auth: false

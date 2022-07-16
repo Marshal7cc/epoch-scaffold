@@ -11,10 +11,16 @@ spring:
     url: jdbc:mysql://${mysql.url:localhost:3306}/epoch-iam?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
     username: root
     password: marshal1234!
-# log
-logging:
-  level:
-    root: info
+# oauth2
+security:
+  oauth2:
+    client:
+      accessTokenUri: ${auth.url:http://localhost:8020}/oauth/token
+      userAuthorizationUri: ${auth.url:http://localhost:8020}/oauth/authorize
+      clientId: EPOCH
+      clientSecret: 123456
+    resource:
+      userInfoUri: ${auth.url:http://localhost:8020}/user
 # health check management
 management:
   endpoint:
@@ -24,4 +30,12 @@ management:
     web:
       exposure:
         include: health,info,gateway
-
+# log
+logging:
+  level:
+    root: info
+    org.epoch: debug
+# epoch
+epoch:
+  security:
+    enable-auth: true
