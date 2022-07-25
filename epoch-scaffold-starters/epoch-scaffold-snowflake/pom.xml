@@ -5,16 +5,24 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>epoch-demo</artifactId>
         <groupId>org.epoch</groupId>
+        <artifactId>epoch-scaffold-starters</artifactId>
         <version>1.0.0.SNAPSHOT</version>
     </parent>
-    <artifactId>epoch-demo-starter-core</artifactId>
+
+    <artifactId>epoch-scaffold-snowflake</artifactId>
 
     <dependencies>
+        <!-- Spring Boot Starter Web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- EPOCH Starters -->
         <dependency>
             <groupId>org.epoch.starter</groupId>
-            <artifactId>epoch-starter-core</artifactId>
+            <artifactId>epoch-starter-snowflake</artifactId>
             <version>1.0.0.RELEASE</version>
         </dependency>
     </dependencies>
@@ -27,4 +35,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>org.epoch</groupId>
-        <artifactId>epoch-demo</artifactId>
+        <artifactId>epoch-scaffold</artifactId>
         <version>1.0.0.SNAPSHOT</version>
     </parent>
 

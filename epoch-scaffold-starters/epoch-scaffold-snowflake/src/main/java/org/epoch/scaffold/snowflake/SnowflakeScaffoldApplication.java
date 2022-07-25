@@ -1,6 +1,6 @@
-package org.epoch.demo.snowflake;
+package org.epoch.scaffold.snowflake;
 
-import org.epoch.core.util.ApplicationContextHolder;
+import org.epoch.core.util.ApplicationContextHelper;
 import org.epoch.snowflake.helper.SnowflakeHelper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,11 +10,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 2022/7/3
  */
 @SpringBootApplication
-public class DemoSnowflakeApplication {
+public class SnowflakeScaffoldApplication {
     public static void main(String[] args) {
-        SpringApplication.run(DemoSnowflakeApplication.class, args);
+        SpringApplication.run(SnowflakeScaffoldApplication.class, args);
 
-        SnowflakeHelper snowflakeHelper = ApplicationContextHolder.getContext().getBean(SnowflakeHelper.class);
+        SnowflakeHelper snowflakeHelper = ApplicationContextHelper.getContext().getBean(SnowflakeHelper.class);
         long next = snowflakeHelper.next();
         System.out.println("next key is: " + next);
     }

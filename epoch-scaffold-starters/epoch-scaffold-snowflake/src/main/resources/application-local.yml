@@ -4,7 +4,7 @@ server:
 # spring
 spring:
   application:
-    name: epoch-demo-starter-snowflake
+    name: epoch-scaffold-snowflake
 # health check management
 management:
   endpoint:
