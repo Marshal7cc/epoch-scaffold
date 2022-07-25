@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: epoch-scaffold-snowflake
+  profiles:
+    active: local
