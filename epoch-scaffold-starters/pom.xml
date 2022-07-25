@@ -14,7 +14,9 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>epoch-scaffold-jpa</module>
         <module>epoch-scaffold-lock</module>
+        <module>epoch-scaffold-mybatis</module>
         <module>epoch-scaffold-snowflake</module>
     </modules>
 </project>
