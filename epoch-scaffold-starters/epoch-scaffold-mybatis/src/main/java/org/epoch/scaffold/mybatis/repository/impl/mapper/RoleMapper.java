@@ -1,8 +1,8 @@
-package org.epoch.demo.mybatis.repository.impl.mapper;
+package org.epoch.scaffold.mybatis.repository.impl.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.epoch.demo.mybatis.repository.entity.Role;
+import org.epoch.scaffold.mybatis.repository.entity.Role;
 
 /**
  * @author Marshal

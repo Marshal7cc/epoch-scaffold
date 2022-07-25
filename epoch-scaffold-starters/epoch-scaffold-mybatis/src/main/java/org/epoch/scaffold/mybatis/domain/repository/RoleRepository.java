@@ -1,7 +1,7 @@
-package org.epoch.demo.mybatis.domain.repository;
+package org.epoch.scaffold.mybatis.domain.repository;
 
 import org.epoch.data.repository.BaseRepository;
-import org.epoch.demo.mybatis.repository.entity.Role;
+import org.epoch.scaffold.mybatis.repository.entity.Role;
 
 /**
  * @author Marshal

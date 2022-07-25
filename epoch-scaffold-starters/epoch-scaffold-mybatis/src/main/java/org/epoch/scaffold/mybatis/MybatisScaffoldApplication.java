@@ -1,4 +1,4 @@
-package org.epoch.demo.mybatis;
+package org.epoch.scaffold.mybatis;
 
 import org.epoch.boot.autoconfigure.EpochApplication;
 import org.mybatis.spring.annotation.MapperScan;

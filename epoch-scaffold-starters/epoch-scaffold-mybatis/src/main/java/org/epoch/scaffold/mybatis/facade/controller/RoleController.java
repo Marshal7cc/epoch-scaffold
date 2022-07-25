@@ -1,10 +1,10 @@
-package org.epoch.demo.mybatis.facade.controller;
+package org.epoch.scaffold.mybatis.facade.controller;
 
 
-import org.epoch.demo.mybatis.domain.entity.RoleDTO;
-import org.epoch.demo.mybatis.domain.service.RoleService;
-import org.epoch.demo.mybatis.facade.query.RoleQuery;
-import org.epoch.demo.mybatis.facade.vo.RoleVO;
+import org.epoch.scaffold.mybatis.domain.entity.RoleDTO;
+import org.epoch.scaffold.mybatis.domain.service.RoleService;
+import org.epoch.scaffold.mybatis.facade.query.RoleQuery;
+import org.epoch.scaffold.mybatis.facade.vo.RoleVO;
 import org.epoch.web.facade.controller.BaseController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

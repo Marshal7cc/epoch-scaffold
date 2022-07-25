@@ -1,4 +1,4 @@
-package org.epoch.demo.mybatis.domain.entity;
+package org.epoch.scaffold.mybatis.domain.entity;
 
 import java.util.Date;
 
@@ -17,7 +17,5 @@ public class RoleDTO extends AbstractDO<String> {
     private Date startActiveDate;
     private Date endActiveDate;
 
-    public boolean isNew() {
-        return getId() == null;
-    }
+
 }

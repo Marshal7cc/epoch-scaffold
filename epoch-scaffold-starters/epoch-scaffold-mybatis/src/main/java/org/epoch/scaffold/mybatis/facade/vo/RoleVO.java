@@ -1,4 +1,4 @@
-package org.epoch.demo.mybatis.facade.vo;
+package org.epoch.scaffold.mybatis.facade.vo;
 
 import java.util.Date;
 

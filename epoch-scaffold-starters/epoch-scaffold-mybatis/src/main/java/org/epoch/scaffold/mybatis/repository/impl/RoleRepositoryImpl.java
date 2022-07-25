@@ -1,9 +1,9 @@
-package org.epoch.demo.mybatis.repository.impl;
+package org.epoch.scaffold.mybatis.repository.impl;
 
 
-import org.epoch.demo.mybatis.domain.repository.RoleRepository;
-import org.epoch.demo.mybatis.repository.entity.Role;
-import org.epoch.demo.mybatis.repository.impl.mapper.RoleMapper;
+import org.epoch.scaffold.mybatis.domain.repository.RoleRepository;
+import org.epoch.scaffold.mybatis.repository.entity.Role;
+import org.epoch.scaffold.mybatis.repository.impl.mapper.RoleMapper;
 import org.epoch.mybatis.repository.BaseMybatisRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

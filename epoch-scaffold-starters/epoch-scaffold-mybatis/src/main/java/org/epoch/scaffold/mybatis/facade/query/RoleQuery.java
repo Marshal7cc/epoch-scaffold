@@ -1,4 +1,4 @@
-package org.epoch.demo.mybatis.facade.query;
+package org.epoch.scaffold.mybatis.facade.query;
 
 import java.util.Date;
 

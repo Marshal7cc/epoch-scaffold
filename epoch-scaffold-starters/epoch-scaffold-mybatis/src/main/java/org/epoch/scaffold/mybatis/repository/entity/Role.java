@@ -1,4 +1,4 @@
-package org.epoch.demo.mybatis.repository.entity;
+package org.epoch.scaffold.mybatis.repository.entity;
 
 import java.util.Date;
 
