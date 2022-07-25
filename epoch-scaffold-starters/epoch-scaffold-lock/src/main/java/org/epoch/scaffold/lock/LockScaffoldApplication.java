@@ -1,15 +1,15 @@
-package org.epoch.demo;
+package org.epoch.scaffold.lock;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author Marshal
- * @date 2021/1/26
+ * @since 2022/7/25
  */
 @SpringBootApplication
-public class DemoStarterLockApplication {
+public class LockScaffoldApplication {
     public static void main(String[] args) {
-        SpringApplication.run(DemoStarterLockApplication.class, args);
+        SpringApplication.run(LockScaffoldApplication.class, args);
     }
 }

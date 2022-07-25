@@ -1,10 +1,11 @@
-package org.epoch.demo.api.controller;
+package org.epoch.scaffold.lock.interfaces.controller;
 
 import lombok.Data;
-import org.epoch.core.rest.Response;
-import org.epoch.core.rest.ResponseEntity;
+
 import org.epoch.lock.annotation.Lock;
 import org.epoch.lock.annotation.LockKey;
+import org.epoch.web.rest.Response;
+import org.epoch.web.rest.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -26,9 +27,9 @@ public class LockController {
     }
 
     @GetMapping("/test11")
-    @Lock(name = "'lockOps'+#id")
+    @Lock(name = "'lockOps'+#id", waitTime = 5L)
     public ResponseEntity<Void> test1(@RequestParam String id) throws InterruptedException {
-        Thread.sleep(20000L);
+        Thread.sleep(10000L);
         return Response.success();
     }
 

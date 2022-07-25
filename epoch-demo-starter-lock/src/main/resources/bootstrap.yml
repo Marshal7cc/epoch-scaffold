@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: epoch-demo-starter-lock
-  profiles:
-    active: local

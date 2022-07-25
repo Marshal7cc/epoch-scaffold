@@ -4,7 +4,7 @@ server:
 # spring
 spring:
   application:
-    name: epoch-demo-starter-lock
+    name: epoch-scaffold-lock
 
 # epoch lock
 epoch:
@@ -12,6 +12,11 @@ epoch:
     single-server:
       address: localhost
       port: 6379
+
+# logging
+logging:
+  level:
+    org.epoch: debug
 
 # health check management
 management:
