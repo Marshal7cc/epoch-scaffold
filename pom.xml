@@ -29,6 +29,7 @@
         <module>epoch-demo-starter-mybatis</module>
         <module>epoch-demo-starter-metric</module>
         <module>epoch-demo-starter-snowflake</module>
+        <module>epoch-scaffold-commons</module>
     </modules>
 
     <dependencyManagement>
