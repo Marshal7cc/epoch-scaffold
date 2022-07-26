@@ -13,7 +13,7 @@ import org.epoch.jpa.domain.BaseAuditEntity;
 @Data
 @Entity
 @Table(name = "sys_role")
-public class Role extends BaseAuditEntity<String> {
+public class RoleJpaEntity extends BaseAuditEntity<String> {
     private String code;
     private String name;
     private String description;

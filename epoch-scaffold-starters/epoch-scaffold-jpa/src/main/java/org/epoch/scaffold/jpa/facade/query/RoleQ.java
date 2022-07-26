@@ -1,16 +1,16 @@
-package org.epoch.scaffold.jpa.domain.entity;
+package org.epoch.scaffold.jpa.facade.query;
 
 import java.util.Date;
 
 import lombok.Data;
-import org.epoch.data.domain.AbstractDO;
+import org.epoch.web.facade.query.BaseQuery;
 
 /**
  * @author Marshal
  * @since 2022/7/11
  */
 @Data
-public class RoleDTO extends AbstractDO<String> {
+public class RoleQ extends BaseQuery {
     private String code;
     private String name;
     private String description;

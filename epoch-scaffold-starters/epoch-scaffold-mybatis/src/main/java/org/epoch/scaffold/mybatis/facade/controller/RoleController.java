@@ -1,7 +1,7 @@
 package org.epoch.scaffold.mybatis.facade.controller;
 
 
-import org.epoch.scaffold.mybatis.domain.entity.RoleDTO;
+import org.epoch.scaffold.mybatis.domain.entity.RoleDO;
 import org.epoch.scaffold.mybatis.domain.service.RoleService;
 import org.epoch.scaffold.mybatis.facade.query.RoleQuery;
 import org.epoch.scaffold.mybatis.facade.vo.RoleVO;
@@ -15,6 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/api/v1/roles")
-public class RoleController extends BaseController<RoleService, RoleVO, RoleQuery, RoleDTO, String> {
+public class RoleController extends BaseController<RoleService, RoleVO, RoleQuery, RoleDO, String> {
 
 }

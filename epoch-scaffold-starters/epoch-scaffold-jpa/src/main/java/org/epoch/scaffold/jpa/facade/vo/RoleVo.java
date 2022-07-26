@@ -10,7 +10,7 @@ import org.epoch.web.facade.vo.BaseVO;
  * @since 2022/7/11
  */
 @Data
-public class RoleVO extends BaseVO {
+public class RoleVo extends BaseVO {
     private String code;
     private String name;
     private String description;
